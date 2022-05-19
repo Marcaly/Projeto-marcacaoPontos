@@ -6,17 +6,15 @@ public class Funcionario {
 
     private String nome;
     private String cpf;
-    private Date dataNascimento;
+    private String dataNascimento;
     private String rg;
     private String endereco;
     private String ddd;
     private String celular;
 
-    public Funcionario() {
 
-    }
 
-    public Funcionario(String nome, String cpf, Date dataNascimento, String rg, String endereco, String ddd, String celular) {
+    public Funcionario(String nome, String cpf, String dataNascimento, String rg, String endereco, String ddd, String celular) {
         this.nome = nome;
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;
@@ -42,11 +40,12 @@ public class Funcionario {
         this.cpf = cpf;
     }
 
-    public Date getDataNascimento() {
+    public String getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
+
+    public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
@@ -80,5 +79,17 @@ public class Funcionario {
 
     public void setCelular(String celular) {
         this.celular = celular;
+    }
+
+    @Override
+    public String toString() {
+        return "Nome do funcionário = " + nome +
+                ", Cpf = " + cpf +
+                ", Data de nascimento = " + dataNascimento +
+                ", RG = " + rg +
+                ", Endereco = " + endereco +
+                ", DDD = " + ddd +
+                ", Celular = " + celular;
+
     }
 }
