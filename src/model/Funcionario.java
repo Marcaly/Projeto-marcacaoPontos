@@ -12,6 +12,10 @@ public class Funcionario {
     private String ddd;
     private String celular;
 
+    public Funcionario(String nome, String cpf) {
+        this.nome = nome;
+        this.cpf = cpf;
+    }
 
     public Funcionario(String nome, String cpf, String dataNascimento, String rg, String endereco, String ddd, String celular) {
         this.nome = nome;
@@ -80,5 +84,16 @@ public class Funcionario {
         this.celular = celular;
     }
 
-
+    @Override
+    public String toString() {
+        return "Funcionario{" +
+                "nome='" + nome + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", dataNascimento='" + dataNascimento + '\'' +
+                ", rg='" + rg + '\'' +
+                ", endereco='" + endereco + '\'' +
+                ", ddd='" + ddd + '\'' +
+                ", celular='" + celular + '\'' +
+                '}';
+    }
 }
