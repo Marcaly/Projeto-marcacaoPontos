@@ -39,6 +39,7 @@ public class Programa {
                     System.out.println("Opção inválida");
                     break;
             }
+            execucao = false;
         }
     }
 }
