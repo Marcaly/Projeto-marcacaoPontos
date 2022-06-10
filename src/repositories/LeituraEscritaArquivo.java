@@ -9,10 +9,16 @@ public class LeituraEscritaArquivo {
     public static void main(String[] args) throws IOException {
 
         File fileDiretorio = new File("C:\\Users\\gabri\\Projetos\\Projeto-marcacaoPontos\\src\\repositories\\diretorio");
-        File arquivo = new File(fileDiretorio + "arquivo.txt");
+        File arquivo = new File(fileDiretorio + "\\arquivo.txt");
 
-        fileDiretorio.mkdir();
-        arquivo.createNewFile();
+        if (!fileDiretorio.exists()) {
+            fileDiretorio.mkdir();
+        }
+
+        if (!arquivo.exists()) {
+
+            arquivo.createNewFile();
+        }
 
         Funcionario funcionario = new Funcionario("Joesley","15662595678");
 

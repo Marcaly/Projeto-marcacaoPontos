@@ -12,6 +12,9 @@ public class Funcionario {
     private String ddd;
     private String celular;
 
+    public Funcionario() {
+    }
+
     public Funcionario(String nome, String cpf) {
         this.nome = nome;
         this.cpf = cpf;
@@ -94,6 +97,6 @@ public class Funcionario {
                 ", endereco='" + endereco + '\'' +
                 ", ddd='" + ddd + '\'' +
                 ", celular='" + celular + '\'' +
-                '}';
+                '}' + "\n";
     }
 }

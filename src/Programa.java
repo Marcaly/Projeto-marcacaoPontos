@@ -1,12 +1,13 @@
 import services.FuncionarioService;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Programa {
 
     static Scanner sc = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         FuncionarioService funcionarioService = new FuncionarioService();
 
@@ -24,16 +25,16 @@ public class Programa {
 
             switch (opcao) {
                 case "1":
-                    funcionarioService.save();
+                    funcionarioService.salvarInformacoes();
                     break;
                 case "2":
-                    funcionarioService.update();
+                    funcionarioService.editarInformacoes();
                     break;
                 case "3":
-                    funcionarioService.getAll();
+                    funcionarioService.mostrarInformacoes();
                     break;
                 case "4":
-                    funcionarioService.delete();
+                    funcionarioService.deletar();
                     break;
                 default:
                     System.out.println("Opção inválida");
