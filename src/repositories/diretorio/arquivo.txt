@@ -1,0 +1,6 @@
+Funcionario{nome='sandro', cpf='null', dataNascimento='null', rg='null', endereco='null', ddd='null', celular='null'}
+
+Funcionario{nome='geraldo', cpf='null', dataNascimento='null', rg='null', endereco='null', ddd='null', celular='null'}
+
+Funcionario{nome='joaquim', cpf='null', dataNascimento='null', rg='null', endereco='null', ddd='null', celular='null'}
+

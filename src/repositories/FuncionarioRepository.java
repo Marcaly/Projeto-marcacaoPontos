@@ -9,7 +9,7 @@ public class FuncionarioRepository {
     static File arquivo;
 
     public FuncionarioRepository() throws IOException {
-        File diretorio = new File("C:\\Users\\gabri\\Projetos\\Projeto-marcacaoPontos\\src\\repositories");
+        File diretorio = new File("C:\\Users\\gabri\\Projetos\\Projeto-marcacaoPontos\\src\\repositories\\diretorio");
         if (!diretorio.exists()) {
 
             diretorio.mkdir();
