@@ -7,7 +7,6 @@ public class Funcionario {
     private String nome;
     private String cpf;
     private String dataNascimento;
-    private String rg;
     private String endereco;
     private String ddd;
     private String celular;
@@ -20,11 +19,10 @@ public class Funcionario {
         this.cpf = cpf;
     }
 
-    public Funcionario(String nome, String cpf, String dataNascimento, String rg, String endereco, String ddd, String celular) {
+    public Funcionario(String nome, String cpf, String dataNascimento, String endereco, String ddd, String celular) {
         this.nome = nome;
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;
-        this.rg = rg;
         this.endereco = endereco;
         this.ddd = ddd;
         this.celular = celular;
@@ -53,14 +51,6 @@ public class Funcionario {
 
     public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
-    }
-
-    public String getRg() {
-        return rg;
-    }
-
-    public void setRg(String rg) {
-        this.rg = rg;
     }
 
     public String getEndereco() {
@@ -93,8 +83,7 @@ public class Funcionario {
                 "nome='" + nome + '\'' +
                 ", cpf='" + cpf + '\'' +
                 ", dataNascimento='" + dataNascimento + '\'' +
-                ", rg='" + rg + '\'' +
-                ", endereco='" + endereco + '\'' +
+                " , endereco='" + endereco + '\'' +
                 ", ddd='" + ddd + '\'' +
                 ", celular='" + celular + '\'' +
                 '}' + "\n";

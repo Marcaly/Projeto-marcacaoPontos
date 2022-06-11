@@ -20,6 +20,7 @@ public class Programa {
             System.out.println("2. Atualizar dados de funcionário");
             System.out.println("3. Listar funcionários");
             System.out.println("4. Remover um funcionário");
+            System.out.println("5. Sair do programa");
 
             String opcao = sc.nextLine();
 
@@ -36,11 +37,13 @@ public class Programa {
                 case "4":
                     funcionarioService.deletar();
                     break;
+                case "5":
+                    execucao = false;
+                    break;
                 default:
                     System.out.println("Opção inválida");
                     break;
             }
-            execucao = false;
         }
     }
 }

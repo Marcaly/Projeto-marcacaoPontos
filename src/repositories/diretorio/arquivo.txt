@@ -4,3 +4,5 @@ Funcionario{nome='geraldo', cpf='null', dataNascimento='null', rg='null', endere
 
 Funcionario{nome='joaquim', cpf='null', dataNascimento='null', rg='null', endereco='null', ddd='null', celular='null'}
 
+Funcionario{nome='gasb', cpf='8943', dataNascimento='483943' , endereco='idfosiodfisdof', ddd='908', celular='493293484'}
+
